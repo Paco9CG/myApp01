@@ -30,14 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.dgvRegistros = new System.Windows.Forms.DataGridView();
             this.btnCargar = new System.Windows.Forms.Button();
-            this.ofdCSV = new System.Windows.Forms.OpenFileDialog();
+            this.dgvRegistros = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ofdCSV = new System.Windows.Forms.OpenFileDialog();
+            this.btnGuardar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -54,6 +55,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.btnGuardar);
             this.splitContainer1.Panel1.Controls.Add(this.btnCargar);
             // 
             // splitContainer1.Panel2
@@ -62,6 +64,17 @@
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 82;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // btnCargar
+            // 
+            this.btnCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnCargar.Location = new System.Drawing.Point(12, 12);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(159, 42);
+            this.btnCargar.TabIndex = 0;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // dgvRegistros
             // 
@@ -83,21 +96,6 @@
             this.dgvRegistros.Size = new System.Drawing.Size(800, 364);
             this.dgvRegistros.TabIndex = 0;
             this.dgvRegistros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistros_CellContentClick);
-            // 
-            // btnCargar
-            // 
-            this.btnCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnCargar.Location = new System.Drawing.Point(12, 12);
-            this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(159, 42);
-            this.btnCargar.TabIndex = 0;
-            this.btnCargar.Text = "Cargar";
-            this.btnCargar.UseVisualStyleBackColor = true;
-            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
-            // 
-            // ofdCSV
-            // 
-            this.ofdCSV.FileName = "openFileDialog1";
             // 
             // Column1
             // 
@@ -143,6 +141,21 @@
             this.Column5.ReadOnly = true;
             this.Column5.Width = 50;
             // 
+            // ofdCSV
+            // 
+            this.ofdCSV.FileName = "openFileDialog1";
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnGuardar.Location = new System.Drawing.Point(177, 12);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(159, 42);
+            this.btnGuardar.TabIndex = 1;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -150,7 +163,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
-            this.Text = "Personas";
+            this.Text = "Personas registradas";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -171,6 +184,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewImageColumn Column4;
         private System.Windows.Forms.DataGridViewImageColumn Column5;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }
 
