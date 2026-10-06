@@ -1,0 +1,11 @@
+C:\Users\franc\source\repos\myApp01\myApp01\bin\Debug\myApp01.exe.config
+C:\Users\franc\source\repos\myApp01\myApp01\bin\Debug\myApp01.exe
+C:\Users\franc\source\repos\myApp01\myApp01\bin\Debug\myApp01.pdb
+C:\Users\franc\source\repos\myApp01\myApp01\obj\Debug\myApp01.csproj.AssemblyReference.cache
+C:\Users\franc\source\repos\myApp01\myApp01\obj\Debug\myApp01.Properties.Resources.resources
+C:\Users\franc\source\repos\myApp01\myApp01\obj\Debug\myApp01.csproj.GenerateResource.cache
+C:\Users\franc\source\repos\myApp01\myApp01\obj\Debug\myApp01.csproj.CoreCompileInputs.cache
+C:\Users\franc\source\repos\myApp01\myApp01\obj\Debug\myApp01.exe
+C:\Users\franc\source\repos\myApp01\myApp01\obj\Debug\myApp01.pdb
+C:\Users\franc\source\repos\myApp01\myApp01\obj\Debug\myApp01.Form1.resources
+C:\Users\franc\source\repos\myApp01\myApp01\obj\Debug\myApp01.FormAgregar.resources
