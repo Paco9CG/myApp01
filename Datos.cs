@@ -10,7 +10,7 @@ namespace myApp01
     internal class Datos
     {
         SqlConnection conexion;
-        string cadenaConexion = "Server=localhost,1433;Integrated Security=false" +"User=sa;password=l12345678.;initial catalog=Agenda";
+        string cadenaConexion = "Server=localhost,1433;Integrated Security=false;" +"User=sa;password=l12345678.;initial catalog=Agenda";
 
         private void conexionOpen()
         {
@@ -27,6 +27,21 @@ namespace myApp01
                 conexion.Close();
             }
             catch (Exception ex) { Console.WriteLine("Error: " + ex.ToString()); }
+        }
+
+        public bool insertar(string nombre, string paterno, string materno, string telefono, string correo)
+        {
+            try
+            {
+                conexionOpen();
+                string comando = "Insert Into Datos(Nombre,Paterno,Materno,Telefono,Correo) Values('" + nombre + "','" + paterno + "','" + materno + "','" + telefono + "','" + correo + "')";
+                SqlCommand sqlCommand = new SqlCommand(comando, conexion);
+                sqlCommand.ExecuteNonQuery();
+                return true;
+            } catch(Exception ex){
+                Console.WriteLine("Error: " + ex.ToString());
+                return false;
+            }
         }
     }
 }

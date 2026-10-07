@@ -16,5 +16,11 @@ namespace myApp01
         {
             InitializeComponent();
         }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAgregar agregar = new FormAgregar();
+            agregar.Show();
+        }
     }
 }
