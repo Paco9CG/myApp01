@@ -19,8 +19,8 @@ namespace myApp01
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormAgregar agregar = new FormAgregar();
-            agregar.Show();
+            FormInformacion informacion = new FormInformacion();
+            informacion.Show();
         }
     }
 }
