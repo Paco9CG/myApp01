@@ -68,6 +68,39 @@ namespace myApp01
                 return null;
             }
         }
+
+        public bool ejecutar(string command)
+        {
+            try
+            {
+                SqlConnection conectar = conexionOpen();
+                SqlCommand sqlCommand = new SqlCommand(command, conectar);
+                sqlCommand.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.ToString());
+                return false;
+            }
+        }
+
+        public bool ejecutar(SqlCommand command)
+        {
+            try
+            {
+                SqlConnection conectar = conexionOpen();
+                command.Connection = conectar;
+                command.ExecuteNonQuery();
+                conexionClose(conectar);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.ToString());
+                return false;
+            }
+        }
     }
 }
  

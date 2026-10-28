@@ -32,6 +32,7 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadosYMunicipiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,8 @@
             // agendaToolStripMenuItem
             // 
             this.agendaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.informacionToolStripMenuItem});
+            this.informacionToolStripMenuItem,
+            this.estadosYMunicipiosToolStripMenuItem});
             this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
             this.agendaToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.agendaToolStripMenuItem.Text = "Agenda";
@@ -64,9 +66,15 @@
             // informacionToolStripMenuItem
             // 
             this.informacionToolStripMenuItem.Name = "informacionToolStripMenuItem";
-            this.informacionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.informacionToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
             this.informacionToolStripMenuItem.Text = "Información";
             this.informacionToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
+            // 
+            // estadosYMunicipiosToolStripMenuItem
+            // 
+            this.estadosYMunicipiosToolStripMenuItem.Name = "estadosYMunicipiosToolStripMenuItem";
+            this.estadosYMunicipiosToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
+            this.estadosYMunicipiosToolStripMenuItem.Text = "Estados y municipios";
             // 
             // Form1
             // 
@@ -76,7 +84,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Agenda";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -90,6 +98,7 @@
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agendaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadosYMunicipiosToolStripMenuItem;
     }
 }
 
